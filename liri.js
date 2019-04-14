@@ -1,4 +1,3 @@
-
 // LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for movies.
 
 // require("dotenv").config();
@@ -54,7 +53,7 @@ if (user_command == "concert-this") {
 function get_movie(movie){
   var search_string_arr = movie.split(" ")
   var search_string = search_string_arr.join("+")
-  console.log("search_string: ", search_string)
+  // console.log("search_string: ", search_string)
   // We then run the request with axios module on a URL with a JSON
   axios.get("http://www.omdbapi.com/?t=" + search_string + "&y=&plot=short&apikey=" + omdb_key).then(
     function (response) {
@@ -80,7 +79,7 @@ function get_band(band) {
   //https://rest.bandsintown.com/artists/foo+fighters/events/?app_id=4cf690ad-0a17-4b5d-b413-17e1ee6b6ea6
   var search_string_arr = band.split(" ")
   var search_string = search_string_arr.join("+")
-  console.log("search_string: ", search_string)
+  // console.log("search_string: ", search_string)
 
   axios.get("https://rest.bandsintown.com/artists/"+search_string+"/events/?app_id=" + bandsintown_key).then(
     function (response) {
