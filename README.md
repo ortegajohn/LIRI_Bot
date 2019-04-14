@@ -20,8 +20,17 @@ movie-this <movie name here>
 ```
 do-what-it-says
 ```
-### Example
+### Example:
 
 ```
 node liri.js concert-this Foo Fighters
 ```
+
+### npm packages
+ 
+ * axios
+ * dotenv
+ * moment
+ * node-spotify-api
+
+
