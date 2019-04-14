@@ -34,3 +34,4 @@ node liri.js concert-this Foo Fighters
  * node-spotify-api
 
 
+### How to setup
