@@ -97,7 +97,12 @@ function get_band(band) {
 
 
 function get_song(song) {
-  console.log("song: ",song)
+  // console.log("song: ",song)
+  var if_blank = "The Sign"
+  if(song.length < 1){
+    song = if_blank;
+    console.log("No song provided, default is 'The Sign'")
+  }
   spotify
     .search({ type: 'track', query: song })
     .then(function (response) {
