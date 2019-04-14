@@ -7,16 +7,21 @@ In this assignment, you will make LIRI. LIRI is like iPhone's SIRI. However, whi
 ### LIRI Bot Commands
 
 ```
-concert-this
+concert-this  <artist/band name here>
 ```
 
 ```
-spotify-this-song
+spotify-this-song  <song name here>
 ```
 ```
-movie-this
+movie-this <movie name here>
 ```
 
 ```
 do-what-it-says
+```
+### Example
+
+```
+node liri.js concert-this Foo Fighters
 ```
