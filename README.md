@@ -35,3 +35,6 @@ node liri.js concert-this Foo Fighters
 
 
 ### How to setup
+
+1. A template .env is provided. Replace the text "yourkey" and "yoursecret" with your API keys.
+2. Execute the command: npm install
